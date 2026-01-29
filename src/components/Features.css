@@ -1,0 +1,238 @@
+.features-section {
+    background: #0a0a0a;
+    padding: 6rem 0;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 5vw, 3rem);
+}
+
+.features-header {
+    margin-bottom: 4rem;
+}
+
+.features-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: #c9a961;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.features-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1rem, 2vw, 1.25rem);
+    width: 100%;
+}
+
+.feature-card {
+    background: rgba(20, 22, 28, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 1.25rem;
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: all var(--transition-normal);
+    backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+    background: rgba(25, 28, 35, 0.95);
+    border-color: rgba(201, 169, 97, 0.25);
+    transform: translateY(-4px);
+}
+
+.feature-card-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-icon-box {
+    width: 48px;
+    height: 48px;
+    background: rgba(30, 32, 38, 0.8);
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-number {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 4.5rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.025);
+    line-height: 1;
+    font-family: var(--font-heading);
+    user-select: none;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 0.875rem;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.feature-description {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: rgba(159, 166, 178, 0.95);
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .features-section {
+        padding: 5rem 0;
+    }
+
+    .container {
+        padding: 0 clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .features-grid {
+        gap: clamp(0.875rem, 1.5vw, 1rem);
+    }
+
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .feature-number {
+        font-size: 4rem;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .features-header {
+        margin-bottom: 3rem;
+    }
+
+    .philosophy-quote-section {
+        padding: 5rem 0;
+    }
+
+    .evolution-section {
+        padding: 5rem 0;
+    }
+
+    .evolution-header {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        padding: 4rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .feature-number {
+        font-size: 3.5rem;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .features-title {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .feature-icon-box {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .features-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .feature-title {
+        font-size: 1.125rem;
+    }
+
+    .feature-description {
+        font-size: 0.8125rem;
+    }
+
+    .philosophy-quote-section {
+        padding: 4rem 0;
+    }
+
+    .evolution-section {
+        padding: 4rem 0;
+    }
+
+    .evolution-header {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .feature-card {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .feature-number {
+        font-size: 3rem;
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .features-label {
+        font-size: 0.65rem;
+    }
+}

@@ -1,0 +1,259 @@
+/* Pricing Section */
+.pricing-section {
+    background: linear-gradient(135deg, #f5f1ea 0%, #ebe5d9 100%);
+    padding: 6rem 0;
+    position: relative;
+}
+
+.pricing-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 5vw, 3rem);
+}
+
+.pricing-header {
+    margin-bottom: 3.5rem;
+}
+
+.pricing-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: #c9a961;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    display: block;
+}
+
+.pricing-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: #1a1a1a;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.pricing-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Category Tabs */
+.category-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 1.5rem;
+    background: rgba(245, 241, 234, 0.5);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.category-tab {
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 0.9375rem;
+    color: #666;
+    text-align: left;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.category-tab:hover {
+    background: rgba(201, 169, 97, 0.1);
+    color: #1a1a1a;
+}
+
+.category-tab.active {
+    background: #1a1a1a;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/* Services Panel */
+.services-panel {
+    padding: 2.5rem 3rem;
+}
+
+.services-category-title {
+    font-size: 1.75rem;
+    color: #1a1a1a;
+    margin-bottom: 2.5rem;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.service-name {
+    font-size: 1rem;
+    color: #1a1a1a;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.service-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg,
+            rgba(26, 26, 26, 0.2) 0%,
+            rgba(26, 26, 26, 0.1) 50%,
+            rgba(26, 26, 26, 0.2) 100%);
+    border-bottom: 1px dotted rgba(26, 26, 26, 0.15);
+}
+
+.service-price {
+    font-size: 1rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.pricing-note {
+    font-size: 0.75rem;
+    color: #999;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pricing-section {
+        padding: 5rem 0;
+    }
+
+    .pricing-content {
+        grid-template-columns: 240px 1fr;
+        gap: 2rem;
+    }
+
+    .services-panel {
+        padding: 2rem 2.5rem;
+    }
+
+    .category-tabs {
+        padding: 1.5rem 1rem;
+    }
+
+    .category-tab {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 4rem 0;
+    }
+
+    .pricing-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .category-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 1.5rem;
+        background: rgba(245, 241, 234, 0.5);
+        border-radius: 1rem 1rem 0 0;
+        gap: 0.75rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .category-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-tab {
+        white-space: nowrap;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.8125rem;
+    }
+
+    .services-panel {
+        padding: 2rem 1.5rem;
+    }
+
+    .services-category-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .services-list {
+        gap: 1.25rem;
+    }
+
+    .service-item {
+        gap: 0.75rem;
+    }
+
+    .service-name,
+    .service-price {
+        font-size: 0.9375rem;
+    }
+
+    .pricing-note {
+        font-size: 0.6875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-container {
+        padding: 0 1rem;
+    }
+
+    .pricing-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .services-panel {
+        padding: 1.5rem 1rem;
+    }
+
+    .category-tabs {
+        padding: 1rem;
+    }
+
+    .category-tab {
+        padding: 0.625rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .services-category-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-name,
+    .service-price {
+        font-size: 0.875rem;
+    }
+
+    .services-list {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}

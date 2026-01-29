@@ -1,0 +1,31 @@
+.hygiene-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.hygiene-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, #0a0a0a 0%, var(--color-secondary) 100%);
+}
+
+.hygiene-icon {
+    font-size: 2rem;
+    color: var(--color-accent);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.hygiene-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hygiene-grid {
+        grid-template-columns: 1fr;
+    }
+}

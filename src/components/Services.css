@@ -1,0 +1,50 @@
+.signature-section {
+    background: var(--color-primary);
+}
+
+.section-header {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.section-header h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-header p {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    cursor: pointer;
+}
+
+.service-content {
+    padding: var(--spacing-md);
+}
+
+.service-content h4 {
+    margin: 0;
+    color: var(--color-accent);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
