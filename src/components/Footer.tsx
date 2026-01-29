@@ -20,9 +20,14 @@ const Footer = () => {
                     </div>
                     <div className="footer-section">
                         <h4>Contact Info</h4>
-                        <p>📍 123 Beauty Street, City</p>
-                        <p>📞 +1 234 567 8900</p>
-                        <p>✉️ info@salon.com</p>
+                        <p>📍 Gallery milinium plaza upperpally chintalmate road Rangareddy Hyderbad 500048</p>
+                        <p>📞 +91 9618344086</p>
+                        <p>✉️ sureshpeddinti221@gmail.com</p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/suresh-peddinti-5b6941232" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
+                                🔗 Connect on LinkedIn
+                            </a>
+                        </p>
                     </div>
                     <div className="footer-section">
                         <h4>Opening Hours</h4>

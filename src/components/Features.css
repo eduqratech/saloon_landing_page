@@ -46,6 +46,7 @@
     padding: 2.5rem 2rem;
     position: relative;
     transition: all var(--transition-normal);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 

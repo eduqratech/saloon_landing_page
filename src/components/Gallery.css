@@ -146,6 +146,35 @@
     }
 
     .gallery-item-small {
+        height: 180px;
+        /* Reduced from 200px */
+    }
+
+    .gallery-item-medium {
+        height: 250px;
+        /* Reduced from 300px */
+    }
+
+    .gallery-item-right {
         height: 200px;
+        /* Reduced from 250px */
+    }
+
+    .gallery-col-large .gallery-item {
+        height: 300px;
+        /* Reduced from 400px */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .gallery-col-large .gallery-item,
+    .gallery-item-medium,
+    .gallery-item-right {
+        height: 250px;
+    }
+
+    .gallery-item-small {
+        height: 150px;
     }
 }

@@ -43,7 +43,7 @@ const Booking: React.FC = () => {
                                 </div>
                                 <div className="contact-text">
                                     <span className="contact-label">Call Anytime, Anyhow</span>
-                                    <span className="contact-value">+91 9818344086</span>
+                                    <span className="contact-value">+91 9618344086</span>
                                 </div>
                             </div>
 
